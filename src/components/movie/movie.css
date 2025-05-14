@@ -1,0 +1,45 @@
+.card-info {
+  display: grid;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.card {
+  height: 280px;
+  width: 540px;
+}
+
+.card-info ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 8px 0 0 0;
+  list-style-type: none;
+}
+
+.card--title {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.card--description {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.card--box {
+  padding: 24px;
+  width: 380px;
+}
+
+.card--image {
+  background-color: rgb(219, 219, 219);
+  background-position: center;
+  background-image: url('https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}

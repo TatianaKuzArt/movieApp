@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './components/app/app';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'antd/dist/reset.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const movieapp = ReactDOM.createRoot(document.querySelector('#root'));
+movieapp.render(<App />);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// const options = {
+//   method: 'GET',
+//   headers: {
+//     accept: 'application/json',
+//     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMTcxNDhjODNkMTJjYmUyZTE0M2YzMjQ2YWUwNjVjMiIsIm5iZiI6MTc0NjEwOTM4Ny4yNCwic3ViIjoiNjgxMzgzY2JjZGI5NzU4OGU3MDIwOGVhIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.cuJXUSVWxeFSoc_93XGWSGmwI433wjw8PmF1bh0hhcM'
+//   }
+// };
+//
+// fetch('https://api.themoviedb.org/3/search/movie?query=fast%20and&include_adult=true&language=en-US&page=1&api_key=a17148c83d12cbe2e143f3246ae065c2', options)
+//   .then(res => res.json())
+//   .then(res => console.log(res))
+//   .catch(err => console.error(err));
