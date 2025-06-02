@@ -26,6 +26,7 @@ function getColor(vote = 0) {
 
 // сам компонент
 const Movie = ({ movie, onRateMovie, activeRate }) => {
+  console.log(movie);
   const shortOverview = truncateText(movie.overview || 'Описание недоступно.', 100);
 
   const genresList = movie.genre_ids.map((id) => (

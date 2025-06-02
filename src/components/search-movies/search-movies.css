@@ -1,0 +1,15 @@
+.search-movies {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  place-self: center;
+  list-style-type: none;
+}
+@media (min-width: 1200px) {
+  .search-movies {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+}

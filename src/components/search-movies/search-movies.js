@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import './film-list.css';
 import Movie from '../movie/movie';
 
-export default class FilmList extends Component {
+export default class SearchMovies extends Component {
   render() {
     const { movies, onRateMovie, activeRate } = this.props;
 
